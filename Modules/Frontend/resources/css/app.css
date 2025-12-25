@@ -1,0 +1,116 @@
+/* -------------------------------------------------------------
+   Tailwind Imports & Plugins
+-------------------------------------------------------------- */
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+/* Scan Blade Views */
+@source "../views";
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/**/*.blade.php";
+
+/* -------------------------------------------------------------
+   Base Layer – global selectors (body, html, headings)
+-------------------------------------------------------------- */
+@layer base {
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+/* -------------------------------------------------------------
+   Utilities Layer – your custom classes
+-------------------------------------------------------------- */
+@layer utilities {
+    /* Primary Button */
+    .btn-primary {
+        background-color: #16a34a;
+        color: white;
+        font-weight: 600;
+        padding: 10px 24px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    .btn-primary:hover {
+        background-color: #15803d;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+    }
+
+    /* Secondary Button */
+    .btn-secondary {
+        background-color: #f59e0b;
+        color: white;
+        font-weight: 600;
+        padding: 10px 24px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+        background-color: #d97706;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    }
+
+    /* Cards hover effects */
+    .category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Cart badge */
+    .cart-badge {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        background-color: #ef4444;
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Brand gradient */
+    .brand-gradient {
+        background: linear-gradient(135deg, #16a34a 0%, #0d8b3a 100%);
+    }
+
+    /* Logo style */
+    .company-logo {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+
+    /* Agriculture SVG pattern */
+    .agriculture-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' ... %3C/svg%3E");
+    }
+
+    /* Testimonial card */
+    .testimonial-card {
+        background: linear-gradient(145deg, #ffffff, #f5f5f5);
+        border-radius: 16px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Sticky nav */
+    .sticky-nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        transition: all 0.3s ease;
+    }
+
+    .nav-scrolled {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+}
