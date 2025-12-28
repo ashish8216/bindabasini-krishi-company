@@ -68,10 +68,45 @@ Follow these steps to install and run the project on your local machine.
 ```bash
 
 composer update
-copy('.env.example', '.env')
+
+```
+
+### 2️⃣ Copy Environment File
+
+```bash
+
+cp .env.example .env
+
+```
+
+### 3️⃣ Generate Application Key
+
+```bash
+
 php artisan key:generate
+
+```
+
+### 4️⃣ Run Fresh Migrations with Seeders
+
+```bash
+
 php artisan migrate:fresh --seed
+
+```
+
+### 5️⃣ Install Frontend Dependencies
+
+```bash
+
 npm install
+
+```
+
+### 6️⃣ Build Frontend Assets (Production)
+
+```bash
+
 npm run build
 
 ```
