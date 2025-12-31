@@ -1,17 +1,17 @@
 <x-frontend::index title="Forgot Password - {{ config('app.name') }}">
 
-   <div class="flex items-center justify-center py-3 bg-gray-100 px-4">
+    <div class="flex items-center justify-center py-3 bg-gray-100 px-4">
 
         <div class="max-w-md w-full p-8 bg-white shadow-xl rounded-2xl">
 
             {{-- Page Title --}}
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-4">
-                Forgot Password
+            <h2 class="text-3xl font-bold text-green-800 text-center mb-4">
+                {{ __('Forgot Password') }}
             </h2>
 
             {{-- Description --}}
             <p class="text-sm text-gray-600 text-center mb-6">
-                Forgot your password? No problem. Just enter your email, and we’ll send you a reset link.
+                {{ __('Forgot your password? No problem. Just enter your email, and we’ll send you a reset link.') }}
             </p>
 
             {{-- Session Status --}}
@@ -27,9 +27,10 @@
 
                 {{-- Email Address --}}
                 <div>
-                    <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
+                    <label for="email" class="block text-gray-700 font-medium mb-1">
+                        {{ __('Email Address') }}</label>
                     <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus
-                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none">
 
                     @error('email')
                         <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
@@ -39,8 +40,8 @@
                 {{-- Button --}}
                 <div class="flex justify-end">
                     <button type="submit"
-                        class="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition font-medium">
-                        Email Password Reset Link
+                        class="px-6 py-2 bg-green-600 hover:bg-green-700 text-white rounded-lg transition font-medium">
+                        {{ __('Email Password Reset Link') }}
                     </button>
                 </div>
 
