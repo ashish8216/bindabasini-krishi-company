@@ -1,6 +1,6 @@
 <x-frontend::index title="About Us - {{ config('app.name') }}">
 
-    <x-frontend::layouts.breadcrumb title="About us" :links="[['name' => 'About', 'path' => '/about']]" />
+    <x-frontend::context.breadcrumb title="About us" :links="[['name' => 'About', 'path' => '/about']]" />
 
     <section class="py-16">
         <div class="container">

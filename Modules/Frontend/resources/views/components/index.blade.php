@@ -20,7 +20,6 @@
 
     <x-frontend::layouts.footer />
 
-    <x-frontend::layouts.handleScrollToTop />
 
     @include('frontend::partials.footer')
 

@@ -15,6 +15,7 @@
                     farmers and dealers across the region since 2010.</p>
             </div>
 
+
             <div>
                 <h3 class="text-lg font-bold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
@@ -78,8 +79,7 @@
             </div>
         </div>
 
-        <div class="border-t border-green-800 mt-8 pt-6 text-center">
-            <p class="opacity-80 text-sm">© 2023 Bindabasini Krishi Company Pvt. Ltd. All rights reserved.</p>
-        </div>
+        <x-frontend::context.copyright />
+
     </div>
 </footer>

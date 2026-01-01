@@ -1,4 +1,4 @@
-<x-frontend::index title="Home">
+<x-frontend::index title="Home - {{ config('app.name') }}">
     @include('frontend::context.hero_section')
     @include('frontend::context.company_overview')
     @include('frontend::context.featured_products')

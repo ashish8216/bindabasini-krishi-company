@@ -1,31 +1,6 @@
  <header class="sticky-nav bg-white">
 
-     <!-- Top Bar with Contact Info -->
-     <div class="container-fluid bg-green-800 text-white py-2 hidden md:block">
-         <div class="container flex justify-between items-center text-sm">
-             <div class="flex items-center space-x-6">
-                 <div class="flex items-center">
-                     <i class="fas fa-phone-alt mr-2"></i>
-                     <span>+977 01-1234567</span>
-                 </div>
-                 <div class="flex items-center">
-                     <i class="fas fa-envelope mr-2"></i>
-                     <span>info@bindabashiniagricultural.com</span>
-                 </div>
-                 <div class="flex items-center">
-                     <i class="fas fa-map-marker-alt mr-2"></i>
-                     <span>Kathmandu, Nepal</span>
-                 </div>
-             </div>
-             <div class="flex items-center space-x-4">
-                 <div class="flex space-x-2">
-                     <a href="#" class="hover:text-yellow-300"><i class="fab fa-facebook-f"></i></a>
-                     <a href="#" class="hover:text-yellow-300"><i class="fab fa-twitter"></i></a>
-                     <a href="#" class="hover:text-yellow-300"><i class="fab fa-instagram"></i></a>
-                 </div>
-             </div>
-         </div>
-     </div>
+     <x-frontend::context.top_bar />
 
      <!-- Main Navigation -->
      <div class="container flex items-center justify-between py-4">
@@ -127,34 +102,8 @@
 
      </div>
 
-     <div class="bg-[#d97706] text-white  hidden md:block">
-         <nav class="container mx-auto flex">
-             <a href="#" class=" p-3 font-medium bg-yellow-400 text-green-800 transition">Home</a>
-             <!-- active -->
-             <a href="#" class="p-3  font-medium hover:bg-yellow-400 hover:text-green-800 transition">Products</a>
-             <a href="#" class="p-3 font-medium hover:bg-yellow-400 hover:text-green-800 transition">Dealer
-                 Pricing</a>
-             <a href="#" class="p-3 font-medium hover:bg-yellow-400 hover:text-green-800 transition">About
-                 Us</a>
-             <a href="#" class="p-3  font-medium hover:bg-yellow-400 hover:text-green-800 transition">Contact</a>
-         </nav>
-     </div>
+     <x-frontend::context.navbar />
 
+     <x-frontend::context.mobile_menu />
 
-
-     <!-- Mobile Menu -->
-     <div class="md:hidden bg-white border-t hidden" id="mobileMenu">
-         <div class="px-4 py-3 space-y-3">
-             <div class="relative">
-                 <input type="text" placeholder="Search products..."
-                     class="w-full px-4 py-2 border border-gray-300 rounded-lg" />
-                 <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
-             </div>
-             <a href="#" class="block py-2 text-gray-700 hover:text-green-600 font-medium">Home</a>
-             <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Machinery & Tractors</a>
-             <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Hand Tools</a>
-             <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Irrigation Systems</a>
-             <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Seeds & Fertilizers</a>
-             <a href="#" class="block py-2 text-gray-700 hover:text-green-600">Protective Gear</a>
-         </div>
  </header>
